@@ -55,8 +55,10 @@ public class Patterns_In_Recusrion {
 			}
 		}
 		sum+= arr[index];
+		//when picked!!
 		int left = print3(index+1, sum, sumRequired, sizeOfArray, arr);
 		sum -= arr[index];
+		//when not picked!!
 		int right = print3(index+1, sum, sumRequired, sizeOfArray, arr);
 		return left+right;
 	}
